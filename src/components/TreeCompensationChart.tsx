@@ -1,10 +1,8 @@
 import { useEffect, useRef, useState, use } from "react";
 import {
   compenStatusChart,
-  cuttingStatusChart,
   treeCompensationLayer,
   treeCompensationRenderer,
-  treeCuttingLayer,
 } from "../layers";
 import FeatureFilter from "@arcgis/core/layers/support/FeatureFilter";
 import Query from "@arcgis/core/rest/support/Query";
@@ -19,7 +17,7 @@ import {
   zoomToLayer,
 } from "../Query";
 import "../App.css";
-import { CalciteButton, CalciteLabel } from "@esri/calcite-components-react";
+import { CalciteLabel } from "@esri/calcite-components-react";
 import { MyContext } from "../App";
 import { ArcgisMap } from "@arcgis/map-components/dist/components/arcgis-map";
 import * as reactiveUtils from "@arcgis/core/core/reactiveUtils";
@@ -209,7 +207,7 @@ const TreeCompensationChart = () => {
               type: "simple-fill",
               outline: {
                 width: 1.5,
-                color: [75, 75, 75, 1],
+                color: "#D3D3D3",
               },
               style: "none",
               color: [0, 0, 0, 0.1],

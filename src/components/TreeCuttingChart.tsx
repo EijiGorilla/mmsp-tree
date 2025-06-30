@@ -203,7 +203,7 @@ const TreeCuttingChart = () => {
           type: "simple-fill",
           outline: {
             width: 1.5,
-            color: [75, 75, 75, 1],
+            color: "#D3D3D3",
           },
           style: "none",
           color: [0, 0, 0, 0.1],
